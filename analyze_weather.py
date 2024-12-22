@@ -73,7 +73,6 @@ async def get_all_temperatures(cities, api_key):
 
 def process_data(data: pd.DataFrame, api_key: str):
     data['timestamp'] = pd.to_datetime(data['timestamp'])
-    data['timestamp'] = pd.to_datetime(data['timestamp'])
     cities = data['city'].unique()
     window = 30
     args = [(data, city, window) for city in cities]
