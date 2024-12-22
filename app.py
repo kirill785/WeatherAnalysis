@@ -41,7 +41,7 @@ if uploaded_file is not None:
             st.write(f"Средняя температура: {stat['global_mean']:.2f} °C")
             st.write(f"Минимальная температура: {stat['global_min']:.2f} °C")
             st.write(f"Максимальная температура: {stat['global_max']:.2f} °C")
-            st.write(f"Тренд: {stat['trend']:.2f}")
+            st.write(f"Тренд: {stat['trend']:.7f}")
             st.write(f"Сезон: {stat['current_season']}")
             st.write(f"Средняя температура в сезон: {stat['season_mean'][stat['current_season']]:.2f} °C")
             st.write(f"Стандартное отклонение в сезон: {stat['season_std'][stat['current_season']]:.2f} °C")
